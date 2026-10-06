@@ -1,3 +1,17 @@
+# dynamic network architectures extended
+
+ **This is a fork of [dynamic_network_architectures](https://github.com/MIC-DKFZ/dynamic_network_architectures)**, originally
+ developed by the Division of Medical Image Computing, German Cancer Research
+ Center (DKFZ), and licensed under the Apache License 2.0.
+
+ This fork extends it by a UNETR implementation. See [CHANGES.md](CHANGES.md) for a list of modifications.
+
+ This project is **not affiliated with, endorsed by, or maintained by** the
+ original nnU-Net authors or the DKFZ. Please direct issues with this fork here,
+ not to the upstream repository.
+
+ Large parts of this README are derived from the original dynamic_network_architectures documentation.
+
 # Dynamic Network Architectures
 
 This repository contains several ResNet, U-Net and VGG architectures in pytorch that can be dynamically adapted to a varying number of image dimensions (1D, 2D or 3D) and the number of input channels.
@@ -14,12 +28,20 @@ In contrast to the original [VGG](https://arxiv.org/pdf/1409.1556.pdf) implement
 ### U-Net
 For the [U-Net](https://arxiv.org/pdf/1505.04597.pdf) a plain convolutional encoder as well as a residual encoder are available. 
 
+
+### UNETR
+For the [UNETR](https://doi.org/10.1109/WACV51458.2022.00181) the version implemented in MONAI was used. 
+
+
 # Acknowledgements
 
-<p align="left">
-  <img src="imgs/Logos/HI_Logo.png" width="150"> &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="imgs/Logos/DKFZ_Logo.png" width="500"> 
-</p>
+ **This is a fork of [dynamic_network_architectures](https://github.com/MIC-DKFZ/dynamic_network_architectures)**, originally
+ developed by the Division of Medical Image Computing, German Cancer Research
+ Center (DKFZ), and licensed under the Apache License 2.0.
 
-This Repository is developed and maintained by the Applied Computer Vision Lab (ACVL)
-of [Helmholtz Imaging](https://www.helmholtz-imaging.de/).
+ This fork extends it to include UNETR. See
+ [CHANGES.md](CHANGES.md) for a list of modifications.
+
+ This project is **not affiliated with, endorsed by, or maintained by** the
+ original nnU-Net authors or the DKFZ. Please direct issues with this fork here,
+ not to the upstream repository.
